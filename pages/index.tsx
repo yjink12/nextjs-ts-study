@@ -38,22 +38,22 @@ const HomePage = (props: any) => {
  *  fetch data from API
  *  @returns 
  */
-// export async function getStaticProps() {
-//     //객체 반환 필수
+export async function getStaticProps() {
+         //객체 반환 필수
         // 요청, 응답 객체에 접근 x
-//     return {
-//         //일반적으로 props 프로퍼티 설정
-//         props: {
-//             meetups: DUMMY_MEETUPS
-//         },
-//         /**
-//          *  Next의 점진적 생성 기능 사용 가능
-//          *  - 요청이 들어올 때 페이지를 다시 생성하기까지 Next가 대기하는 시간
-//          *  - 서버에서 페이지 다시 생성 시간
-//          */
-//         revalidate: 1
-//     }
-// }
+    return {
+        //일반적으로 props 프로퍼티 설정
+        props: {
+            meetups: DUMMY_MEETUPS
+        },
+        /**
+         *  Next의 점진적 생성 기능 사용 가능
+         *  - 요청이 들어올 때 페이지를 다시 생성하기까지 Next가 대기하는 시간
+         *  - 서버에서 페이지 다시 생성 시간
+         */
+        revalidate: 1
+    }
+}
 
 /**
  *  요청이 들어올 때마다 페이지를 다시 생성해야하는 경우
